@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Day01_ClassWork2 {
+public class C06_ClassWork2 {
 
     public static void main(String[] args) {
 
@@ -32,7 +32,7 @@ public class Day01_ClassWork2 {
         if(actualTitle.contains("facebook")){
             System.out.println("Title Testi PASSED");
         }else
-            System.out.println("Title Testi FAILED"+actualTitle);
+            System.out.println("Title Testi FAILED-->"+actualTitle);
 
 
         //Sayfa URL’inin “facebook” kelimesi icerdigini dogrulayin, icermiyorsa “actual” URL’i yazdirin.
@@ -41,7 +41,7 @@ public class Day01_ClassWork2 {
         if(actualUrl.contains("facebook")){
             System.out.println("URL Testi PASSED");
         }else
-            System.out.println("URL Testi FAILED"+actualUrl);
+            System.out.println("URL Testi FAILED-->"+actualUrl);
 
         //https://www.walmart.com/ sayfasina gidin.
         driver.get("https://www.walmart.com/");
@@ -49,14 +49,17 @@ public class Day01_ClassWork2 {
         //Sayfa basliginin “Walmart.com” icerdigini dogrulayin.
         String actualWalmartTitle = driver.getTitle();
         String expectedWalmartTitle = "Walmart.com";
+
         if(actualWalmartTitle.contains(expectedWalmartTitle)){
             System.out.println("Title Testi PASSED");
         }else System.out.println("Title Testi FAILED");
 
         //Tekrar “facebook” sayfasina donun
+
         driver.navigate().back();
 
         //Sayfayi yenileyin
+
         driver.navigate().refresh();
 
         //Browser’i kapatin

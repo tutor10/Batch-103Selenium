@@ -3,16 +3,24 @@ package day01_DriverMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day01_ManageMethods {
+import java.time.Duration;
+
+public class C04_ManageMethods {
     public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();// Bos bir Browser actik
 
+        driver.manage().window().maximize();
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+
 
        //Amazon soyfasina gidelim. https://www.amazon.com/
         driver.get("https://www.amazon.com/");
+
 
         //   Sayfanin konumunu ve boyutlarini yazdirin
         System.out.println("Sayfanin Konumu="+driver.manage().window().getPosition());

@@ -3,7 +3,7 @@ package day01_DriverMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day01_DriverMethods {
+public class C02_DriverMethods {
 
     public static void main(String[] args) {
 
@@ -19,8 +19,9 @@ public class Day01_DriverMethods {
 
        // System.out.println(driver.getPageSource());//sayfanin kaynak kodlarini veirir
 
-        System.out.println(driver.getWindowHandle());//Bize o Window a ait hash dergerini veriri.Biz bu hash degerlerini
+        System.out.println(driver.getWindowHandle());//Bize o Window a ait hash dergerini(sayfanin degerini) veriri.Biz bu hash degerlerini
                                                     // Bir String'e atayip pencereler arasi gecis yapabiliriz.
+        driver.close();//kapanis
 
 
 

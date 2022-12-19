@@ -3,7 +3,7 @@ package day01_DriverMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day01_ClassWork1 {
+public class C05_ClassWork1 {
 
     public static void main(String[] args) {
 
@@ -51,9 +51,9 @@ public class Day01_ClassWork1 {
 
         String actualHtml = driver.getPageSource();
         if(actualHtml.contains("Gateway")){
-            System.out.println("HTML Testi PASSED");
+            System.out.println("HTML Source Code Test PASSED");
         }else
-            System.out.println("HTML Testi FAILED");
+            System.out.println("HTML Sorce Code Test FAILED");
 
         //Sayfayi kapatin.
         driver.close();//Sayfayi kapatmak icin close() methodu kullaniriz.

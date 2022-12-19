@@ -3,7 +3,7 @@ package day01_DriverMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day01_NavigateMethod {
+public class C03_NavigateMethod {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -31,6 +31,7 @@ public class Day01_NavigateMethod {
         driver.navigate().refresh();
 
         //ve sayfayi kapatalim
+        Thread.sleep(3000);
         driver.close();
     }
 }
