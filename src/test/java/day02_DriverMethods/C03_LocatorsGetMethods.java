@@ -25,7 +25,9 @@ public class C03_LocatorsGetMethods {
         driver.get("https://www.amazon.com");
 
        // Search bolumunu locate edip iphone kelimesini aratalim.
-        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone", Keys.ENTER);
+       WebElement locate= driver.findElement(By.id("twotabsearchtextbox"));
+       locate.sendKeys("iphone", Keys.ENTER);
+     //driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone", Keys.ENTER);//bunuda yapabiliriz
 
         // Arama sonuc yazisinda Iphone yazisini locate edip konsola yazdiralim.
         WebElement aramaSonucYazisi=driver.findElement(By.className("sg-col-inner"));
