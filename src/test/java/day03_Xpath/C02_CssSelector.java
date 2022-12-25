@@ -66,5 +66,11 @@ public class C02_CssSelector {
         //Sayfayi kapatin
         driver.close();
 
+        // Aslında ilk tercih id eğer yoksa xPath....
+       // xPath de driver aramaya DOM(İnspect yaptığımız zaman açılan alan)'un
+      // en başından başlıyor buna parent-child diyoruz yani önceki ve sonraki locatelere bakarak
+     // bizim yazdığımız adresi buluyor yavaş ama kesin çözüm.cssSelector ü de hızlı olduğu için tercih ediyoruz.
+     // Eğer hız beklentimiz yoksa nokta atışı yaparak elementi bulabilmek için xPath i tercih ediyoruz
+
     }
 }

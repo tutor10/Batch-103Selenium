@@ -26,14 +26,21 @@ public class C01_Xpath {
         //2- Add Element butonuna basin
         Thread.sleep(3000);
         //WebElement addButton = driver.findElement(By.xpath("//*[@onclick='addElement()']"));
-        WebElement addButtonT = driver.findElement(By.xpath("//*[text()='Add Element']"));
+        //addButton.click();
+
+        //WebElement addButton = driver.findElement(By.xpath("//*[text()='Add Element']"));
+        //addButton.click();
         //               <button onclick="addElement()">Add Element</button>
+
         // Xpath kullanımında locate edeceğimiz webelement text'e sahipse yukardaki şekilde kullanabiliriz
-        addButtonT.click();
+
+       driver.findElement(By.xpath("//*[text()='Add Element']")).click();
+
+
 
         //3 Delete butonu’nun gorunur oldugunu test edin
         WebElement deleteButton = driver.findElement(By.xpath("//*[@onclick='deleteElement()']"));
-        if (deleteButton.isDisplayed()){
+        if (deleteButton.isDisplayed()){//Bir WebElementinin gorunur olup olmadigini "isDisplayed()" methodu ile bakariz
             System.out.println("Test PASSED!");
         }else System.out.println("Test FAILED!");
 
@@ -42,11 +49,11 @@ public class C01_Xpath {
         deleteButton.click();
 
         //5 “Add/Remove Elements” yazisinin gorunur oldugunu test edin
-        WebElement addButonu = driver.findElement(By.xpath("//h3"));
-        if (addButonu.isDisplayed()) {
-            System.out.println("Add Butonu Testi PASSED");
+        WebElement addRemoveYazisi = driver.findElement(By.xpath("//h3"));
+        if (addRemoveYazisi.isDisplayed()) {
+            System.out.println("Add/Remove Butonu Testi PASSED");
         }else {
-            System.out.println("Add Butonu Testi FAILED");
+            System.out.println("Add/Remove Butonu Testi FAILED");
         }
         driver.close();
     }

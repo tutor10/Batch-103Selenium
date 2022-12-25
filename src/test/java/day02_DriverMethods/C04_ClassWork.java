@@ -39,7 +39,7 @@ public class C04_ClassWork {
 
 
         //Arama sonuc saysini konsola yazdiriniz.
-        String [] sonucSayisi = aramaSonucYazisi.get(0).getText().split(" ");
+        String[] sonucSayisi = aramaSonucYazisi.get(0).getText().split(" ");
         System.out.println("Sonuc Sayisi="+sonucSayisi[2]);
 
         //Sonuc sayisini LAMBDA ile yazdiriniz.
@@ -47,7 +47,7 @@ public class C04_ClassWork {
 
 
         //Sonra karşınıza çıkan ilk sonucun resmine tıklayın.
-        List<WebElement> ilkWe = driver.findElements(By.className("s-image"));
+        List<WebElement> ilkWe = driver.findElements(By.className("s-image"));;
         ilkWe.get(0).click();
 
         driver.close();

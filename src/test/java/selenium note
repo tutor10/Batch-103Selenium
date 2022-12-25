@@ -1,0 +1,10 @@
+in OOP multiple forms polymorphism
+
+selenium already design that using polymorphism
+
+What is polymorphism?
+-polymorphism is using multiple forms
+
+How did you use in your project?
+-for example one of the most common is creating web driver i tested application with different browser for ex:chrome,firefox,safari...etc
+then i used polymorphism when we create driver
