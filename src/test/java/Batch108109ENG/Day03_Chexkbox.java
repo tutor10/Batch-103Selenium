@@ -29,6 +29,7 @@ public class Day03_Chexkbox {
         Thread.sleep(3000);
         driver.close();
     }
+
     @Test
     public void checkbox() throws InterruptedException {
 //        Go to https://the-internet.herokuapp.com/checkboxes
